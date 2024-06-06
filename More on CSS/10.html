@@ -1,0 +1,54 @@
+<!-- 10. Create a simple webpage with a card similar to question number 2. The card must be semi-transparent as default and on hovering the card must be displayed clearly. Use CSS opacity to achieve this output. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transparent Card</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .card {
+            width: 300px;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white */
+            transition: background-color 0.3s; /* Smooth transition */
+        }
+
+        .card:hover {
+            background-color: rgba(255, 255, 255, 1); /* Fully opaque white on hover */
+        }
+
+        img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        p {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="admin.png" alt="Placeholder Image">
+        <p><b>Course Name:</b> Example Course</p>
+        <p><b>Instructor:</b> John Doe</p>
+        <p><b>Duration:</b> 6 weeks</p>
+        <p><b>Price:</b> $99</p>
+    </div>
+</body>
+</html>
